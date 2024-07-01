@@ -84,11 +84,11 @@ extends:
             TargetFolder: '$(build.artifactstagingdirectory)/native'
 
         - task: CopyFiles@2
-        displayName: 'Copy blingfiretokdll.pdb to: $(Build.ArtifactStagingDirectory)'
-        inputs:
-          SourceFolder: 'Release/Release'
-          Contents: "blingfiretokdll.pdb"
-          TargetFolder: '$(build.artifactstagingdirectory)/native'
+          displayName: 'Copy blingfiretokdll.pdb to: $(Build.ArtifactStagingDirectory)'
+          inputs:
+            SourceFolder: 'Release/Release'
+            Contents: "blingfiretokdll.pdb"
+            TargetFolder: '$(build.artifactstagingdirectory)/native'
 
 # WINDOWS ARM64
       - job: Build_Dll_For_Win_ARM64
